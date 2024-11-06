@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: df2jdw54g-python-gitops
+  description: This is GitOps manifest for df2jdw54g-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: df2jdw54g-python
+    backstage.io/kubernetes-id: df2jdw54g-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: df2jdw54g-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:df2jdw54g-python

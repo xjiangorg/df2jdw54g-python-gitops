@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: df2jdw54g-python-gitops-repository
+spec:
+  url: https://github.com/xjiangorg/df2jdw54g-python-gitops
